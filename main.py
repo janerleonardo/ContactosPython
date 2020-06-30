@@ -48,6 +48,14 @@ def run():
 
         elif command == 's':
             break
+        elif command == 'm':
+            name = input('Nombre de la erona a quien desea enviar mensajes? ')
+            message = input("Ingrese el mensaje? ")
+            contactbook.send_message_text(name=name,message=message)
+        elif command == 'w':
+            name = input('Nombre de la erona a quien desea enviar mensajes? ')
+            message = input("Ingrese el mensaje? ")
+            contactbook.send_message_whatsapp()
         else:
             print('Comando no encontrado.')
 
